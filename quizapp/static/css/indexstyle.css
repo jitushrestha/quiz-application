@@ -1,0 +1,301 @@
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	line-height: 1.6em;
+	color: #656565;
+	font-size: 14px;
+	background: #eee;
+}
+
+h1, h2 
+{
+    font-weight: 600;
+    line-height: 1.1em;
+    color: #252525;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+/*TOP PART*/
+i
+{
+	color: #8d448b;
+}
+.top
+{
+	background: #1e1e1e;
+	line-height: 45px;
+}
+.top ul li
+{
+	display: inline;
+	padding: 15px;
+	color: #b0b0b0;
+}
+.material-icons 
+{
+	color: #8d448b;
+	font-size: 17px;
+    position: relative;
+    top: 4px;
+}
+/*TOP PART CLOSE*/
+
+
+/*NAV PART*/
+.bg-light
+{
+	background: #fff !important;
+	margin: 0px;
+	padding: 0px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link:hover 
+{
+	/* background: #8d448b; */
+	color: #8d448b;
+}
+.navbar-light .navbar-nav .nav-link 
+{
+	padding: 28px 15px;
+	font-weight: bold;
+}
+.navbar-brand 
+{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+.navbar-brand i {
+    color: #8d448b;
+    font-size: 26px;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+}
+.navbar-light .navbar-brand {
+	color: #8d448b;
+}
+/*NAV PART CLOSE*/
+
+/*SLIDER PART*/
+.carousel-caption h1 
+{
+	color: #8d448b;
+	font-size: 54px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.carousel-caption p {
+    font-size: 20px;
+    font-weight: 400;
+}
+.carousel-caption
+{
+text-align: left;
+}
+.carousel-indicators 
+{
+	left:909px;
+}
+/*SLIDER PART CLOSE*/
+
+/*BODY PART*/
+.services
+{
+	background: #eee;
+}
+.card i
+{
+	font-size: 48px;
+}
+.line 
+{
+    width: 20%;
+    height: 2px;
+    background: #8d448b;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+/*BODY PART CLOSE*/
+
+/*OUR PROCESS PART*/
+.dishes 
+{
+    background: #8d448b;
+    padding: 35px 0;
+    color: #1b1b1b;
+}
+.pro-card
+{
+	background: #fff;
+}
+.whiteinner
+{
+	position: relative;
+}
+.whiteinner h3
+{
+	position: absolute;
+	bottom: -8px;
+	left: 0;
+	background: rgba(255,255,255,0.5);
+	width: 100%;
+	padding: 20px;
+	text-align: left;
+	font-weight: bold;
+}
+/*OUR PROCESS PART CLOSE*/
+
+/*OUR PROCESS PART*/
+/*ul .a1 li
+{
+	position: relative;
+}
+ul .a1 li:before
+{
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	margin-right: 10px;
+    font-weight: 700;
+    color: #93c83f;
+    border: 1px solid;
+    padding: 4px 8px;
+    font-size: 11px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}*/
+ul.withArrow li span {
+    margin-right: 10px;
+    font-weight: 700;
+    color: #8d448b;
+    border: 1px solid;
+    padding: 4px 8px;
+    font-size: 11px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    list-style: none;
+}
+ul.withArrow li
+{
+	list-style: none;
+	line-height: 2.5;
+	margin-left: 5px;
+}
+.btn12
+{
+	text-align: center;
+    color: #FFFFFF;
+    background: #8d448b;
+    border-color: #8d448b;
+    width: 120px;
+    height: 45px;
+    border-radius: 0;
+}
+.btn12:hover
+{
+	background: #00AAFF;
+}
+/*OUR PROCESS PART CLOSE*/
+
+/*FOOTER PART*/
+footer
+{
+	background: #1e1e1e;
+	color: #797979;
+	line-height: 1.5;
+}
+footer h5
+{
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+}
+footer ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+footer ul li a
+{
+	color: #858585;
+}
+footer ul li a:hover
+{
+	color: #8d448b;
+}
+/*FOOTER PART CLOSE*/
+
+
+
+
+
+/*LINK PART ABOUT US*/
+.breadcrumb1
+{
+	background: #8d448b;
+	padding: 30px 0px;
+    border-top: 1px solid #8d448b;
+}
+.breadcrumb1 h3
+{
+	color: #3f3f3f;
+	font-size: 20px;
+	font-weight: bold;	
+}
+.text h3 span
+{
+	color: #8d448b;
+}
+.text h3
+{
+		padding-top: 15px;
+		padding-bottom: 25px;
+}
+/*LINK PART ABOUT US CLOSE*/
+
+/*SUB HEADING COLUMN PART*/
+ .card-header h2 button  i 
+{
+    font-size: 17px;
+    line-height: 18px;
+    width: 10px;
+    height: 18px;
+    margin-right: 10px;
+    color: #A0A0A0;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: -5px;
+    font-weight: bold;
+}
+.accordion .card-header
+{
+	background: #fff; 
+}
+.accordion .card
+{
+	margin: 4px 0px;
+}
+
+.progress
+{
+	height: 5px;
+}
+/*SUB HEADING COLUMN PART CLOSE*/
+
+
+
+
+
+
+
+
+
+
+

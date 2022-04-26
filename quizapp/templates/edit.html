@@ -1,0 +1,47 @@
+{% extends "admin_header.html" %}
+
+
+{% block main %}
+    <title>Edit questions</title>
+    <body>
+        <div class="content">
+            <h3>Edit Question</h3>
+            <br>
+            <!-- <ol>
+                
+                <li>Title: <strong>{{ view.title }}</strong></li>
+                <li>Description: <strong>{{ view.description }}</strong></li>
+                <li>Date: <strong>{{ view.date }}</strong></li>
+            </ol> -->
+            
+            <form action="{% url 'updateques' %}" method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="id" value="{{ view.id }}">
+                <br>
+                <label for="title">Question:</label>
+                <input type="text" name="question" class="form-control" value="{{ view.question }}">
+                <br>
+                <label for="note_description">Option1:</label>
+                <input type="text" name="option1" class="form-control" value="{{ view.option1  }}">
+                <br>
+                <label for="note_added_at">Option2:</label>
+                <input type="text" name="option2" class="form-control" value="{{ view.option2  }}">
+                <br>
+                <label for="note_added_at">option3:</label>
+                <input type="text" name="option3" class="form-control" value="{{ view.option3  }}">
+                <br>
+                <label for="note_added_at">Option4:</label>
+                <input type="text" name="option4" class="form-control" value="{{ view.option4  }}">
+                <br>
+                <label for="note_added_at">Correct Answer:</label>
+                <input type="text" name="correctAns" class="form-control" value="{{ view.correctAns  }}">
+                <br>
+                <input type="submit" value="UPDATE" class="btn btn-primary">
+                <a href="{% url 'showAllQuestion' %}" class="btn btn-primary">Back</a>
+            </form>
+
+        </div>
+    </body>
+</html> 
+
+{% endblock %}

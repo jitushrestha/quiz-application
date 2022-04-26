@@ -1,0 +1,61 @@
+{% extends "admin_header.html" %}
+
+
+{% block main %}
+    <title>Show questions</title>
+    <style>
+        
+        thead{
+            color: #8d448b;
+        }
+        input{
+            width: 160px;
+            margin-left: 8px;
+            background-color: #ffff;
+            border: none;
+            height: 35px;
+        }
+    </style>
+  <body class="container">
+    <h3>All questions</h3>
+    <div class="content">
+        <table border="1" class="table table-bordered table-striped table-hover" id="myTable">
+            <thead>
+                <tr>
+                    <th>S.N</th>
+                    <th>Question</th>
+                    <th>Option 1</th>
+                    <th>Option 2</th>
+                    <th>Option 3</th>
+                    <th>Option 4</th>
+                    <th>Answer</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for value in quesList %}
+                    <tr>
+                        <td>{{forloop.counter}}</td>
+                        <td>{{value.question}}</td>
+                        <td>{{value.option1}}</td>
+                        <td>{{value.option2}}</td>
+                        <td>{{value.option3}}</td>
+                        <td>{{value.option4}}</td>
+                        <td>{{value.correctAns}}</td>
+                        <td>
+                            <!-- <a href="" class="btn btn-primary">Show</a> -->
+                            <a href="{% url 'editques' value.id %}" class="btn btn-outline-warning">Edit</a>
+                            <a href="{% url 'deleteques' value.id %}" class="btn btn-outline-danger">Delete</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+      </div>
+    </body>
+</html>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,60 @@
+substring = strings inside string
+
+capitalize_eg = "lets capitalize it"
+>>> print(capitalize_eg.capitalize())
+Lets capitalize it
+>>> casefold_eg = "Example of CaseFOLD"
+>>> print(casefold_eg.casefold())
+example of casefold
+>>> 
+>>> center_eg = "Welcome to Python Class"
+>>> print(center_eg.center(30))
+   Welcome to Python Class    
+>>> print(center_eg.center(100))
+                                      Welcome to Python Class                                       
+>>> count_eg = "This is a example of count method"
+>>> count_ss_eg = "i"
+>>> print(count_eg.count(count_ss_eg))
+2
+>>> print(count_eg.count("i"))
+2
+>>> count_eg_2 = "Lets try it more. You get it? lets try it more."
+>>> count_eg2_ss = "lets"
+>>> print(count_eg_2.count(count_eg2_ss))
+1
+>>> endswith_eg = "class@mindrisersnepal.com"
+>>> print(endswith_eg.endswith(".com"))
+True
+>>> print(endswith_eg.endswith("gg"))
+False
+>>> 
+>>> expandtabs_eg = "Hello\tNepal\tHow are you?"
+>>> print(expandtabs_eg.expandtabs())
+Hello   Nepal   How are you?
+>>> lower_case_eg = "PLEASE CONVERT ME INTO LOWER"
+>>> print(lower_case_eg.lower())
+please convert me into lower
+>>> upper_case_eg = "convert me into upper case"
+>>> print(upper_case_eg.upper())
+CONVERT ME INTO UPPER CASE
+>>> split_eg = "Lets try to split string"
+>>> print(split_eg.split(" "))
+['Lets', 'try', 'to', 'split', 'string']
+>>> alpha_numeric_eg = "abc123"
+>>> print(alpha_numeric_eg.isalnum())
+True
+>>> alpha_num_case = "abc 123 zyx"
+>>> print(alpha_num_case.isalnum())
+False
+>>> numeric_eg = "981231231"
+>>> print(numeric_eg.isnumeric())
+True
+>>> print("Case one: Hello {}, do you study in {}?.".format("Aman", "10"))
+Case one: Hello Aman, do you study in 10?.
+>>> print("Case two: Hello {name}, do you study in {grade}?.".format(name="Sheelpa", grade="12"))
+Case two: Hello Sheelpa, do you study in 12?.
+>>> print("Case three: Hello {0}, do you study in {1}?.".format("Aman", "2"))
+Case three: Hello Aman, do you study in 2?.
+>>> print("Case four: Hello {0}, do you study in {grade}?.".format("Aman", grade=2))
+Case four: Hello Aman, do you study in 2?.
+>>> 
